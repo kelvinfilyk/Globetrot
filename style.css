@@ -1,0 +1,140 @@
+* {
+  margin:0px;
+}
+/*
+h1, h2, h3 {
+  margin: 0px;
+}
+*/
+
+body {
+  margin: 0px;
+
+  background-color: #323232; /* standard background color */
+  background-image: url("../globetrotter/img/old_map_1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: #323232; /* text color */
+  font-family: "Baskerville Old Face", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+h1 is not an id- it is a tag. Tags do not need #.
+If you want to taget mutliple things (id-tagged objects and classes alike), you can use commas:
+
+#header, .sidebar {
+
+}
+
+*/
+
+.shade {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  height:100vh;
+  z-index:-5;
+}
+
+#container{
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  margin-top: 10px;
+}
+
+#header {
+  padding:10px;
+  background-color: #809600;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#nav {
+  width: inherit;
+  /* float: left; */ /* float to the left-hand side of the parent content... NOT float as in 1.2345678.... */
+}
+
+#nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#nav ul li {
+  float: left;
+}
+
+#nav ul li a {
+  display: block;
+  background-color: #969696;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#nav ul li a:hover {
+    background-color: #323232;
+}
+
+/*
+hashtag for id's, dots (".") for classes.
+
+.selected
+
+To select classes specifically contained in objects of a certain id:
+
+#nav .selected
+
+REMEMBER THERE IS A SPACE between "#nav" and ".selected"
+
+ */
+
+#nav .selected {
+  font-weight: bold;
+}
+
+#content {
+  /* padding can be done in three ways:
+
+  1.
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  2.
+  padding: 10px 10px 10px 10px;
+
+  3.
+  padding: 10px;
+  */
+  padding: 10px;
+  clear:both;
+}
+
+#main {
+  width: 600px;
+  /* float: right; */
+
+}
+
+#footer{
+  padding:10px;
+  clear:both;
+  color: #969696;
+  text-align: center;
+}
