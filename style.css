@@ -11,7 +11,7 @@ body {
   margin: 0px;
 
   background-color: #323232; /* standard background color */
-  background-image: url("../globetrotter/img/old_map_1.jpg");
+  background-image: url("../globetrotter/old_map_1.jpg");
   background-attachment: fixed;
   background-size: cover;
 
