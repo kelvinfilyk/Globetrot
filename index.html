@@ -2,27 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Globetrotter</title>
+    <title>Globetrot</title>
     <!--establish relationship between html and css file. use "rel == relationship"-->
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
+  <body onload="init()">
     <!--div== division- used for page sectioning, formatting in css-->
-    <div class="shade"></div>
+    <div id="shade"></div>
+
+    <div id="header">
+      <div class="blur"></div>
+      <div class="shader"> </div>
+      <h1>Globetrot</h1>
+    </div>
+    <nav>
+      <ul>
+        <!--"a" for "at"; turns into links. li=="list"-->
+        <li><a class="selected" href:"">Home</a></li>
+        <li><a href:"">About</a></li>
+        <li><a href:"">Contact</a></li>
+      </ul>
+    </nav>
+
     <div id="container">
-      <div id="header">
-        <h1>Globetrotter</h1>
-      </div>
-      <div id="nav">
-        <!-- <h3>Navigation</h3> -->
-        <ul>
-          <!--"a" for "at"; turns into links. li=="list"-->
-          <li><a class="selected" href:"">Home</a></li>
-          <li><a href:"">About</a></li>
-          <li><a href:"">Contact</a></li>
-        </ul>
-      </div>
       <div id="content">
+        <canvas id="canvas1" width="700px" height="700px"></canvas>
+        <script src="atlas.js"></script>
 
         <div id="main">
           <h2>Procedural Map Generation</h2>
